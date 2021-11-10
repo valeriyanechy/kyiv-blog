@@ -1,0 +1,60 @@
+.location {
+    padding: 70px 0;
+    text-align: center;
+
+    &__info {
+        max-width: 735px;
+        margin: 0 auto 50px;
+        text-align: center;
+
+        &-title {
+            font: $h2-font;
+            color: $black;
+            margin-bottom: 20px;
+        }
+
+    }
+
+    &__wrap {
+        letter-spacing: $letter-spc;
+        margin: 0 -15px;
+    }
+
+    &__col {
+        width: calc(100% / 3);
+        padding: 0 15px;
+        display: inline-block;
+        letter-spacing: normal;
+        vertical-align: top;
+    }
+
+    &__card {
+        background-color: $white;
+        transition: $trs;
+
+        &:hover {
+            box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+        }
+    }
+
+    &__image-link {
+        display: block;
+        padding-bottom: 92%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px 10px 0 0;
+
+        &:hover img {
+            transform: scale(1.2);
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            object-fit: cover;
+            transition: $trs;
+        }
+    }
+}
