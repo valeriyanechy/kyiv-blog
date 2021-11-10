@@ -4,7 +4,7 @@
 
     &__info {
         max-width: 735px;
-        margin: 0 auto 50px;
+        margin: 0 auto 30px;
         text-align: center;
 
         &-title {
@@ -31,22 +31,22 @@
     &__card {
         background-color: $white;
         transition: $trs;
+        border-radius: 20px;
 
         &:hover {
-            box-shadow: 0px 6px 35px rgba(0, 0, 0, 0.08);
+            transform: scale(1.05);
+            box-shadow: 0px 6px 35px rgba(13, 32, 4, 0.05);
         }
     }
 
     &__image-link {
         display: block;
-        padding-bottom: 92%;
         position: relative;
         overflow: hidden;
-        border-radius: 10px 10px 0 0;
-
-        &:hover img {
-            transform: scale(1.2);
-        }
+        padding-bottom: 91%;
+        border-radius: 20px 20px 0 0;
+        border: 1px solid rgba(89, 190, 41, 0.05);
+        border-bottom: none;
 
         img {
             position: absolute;
@@ -55,6 +55,28 @@
             width: 100%;
             object-fit: cover;
             transition: $trs;
+        }
+    }
+
+    &__body {
+        padding: 30px;
+        border-radius: 0 0 30px 30px;
+        border: 1px solid rgba(89, 190, 41, 0.05);
+        border-top: none;
+        text-align: center;
+    }
+
+    &__name {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &__link {
+        font: $h3-font;
+        color: $title-color;
+
+        &:hover {
+            color: $blue;
         }
     }
 }
