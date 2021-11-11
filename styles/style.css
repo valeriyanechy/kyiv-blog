@@ -110,11 +110,9 @@ a {
   border-radius: 50px;
 }
 .header__info {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 50px 0 115px;
+  padding: 75px 0 115px;
 }
 .header__info-title {
   margin-bottom: 30px;
@@ -129,7 +127,7 @@ a {
 }
 
 .location {
-  padding: 70px 0;
+  padding: 50px 0;
   text-align: center;
 }
 .location__info {
@@ -182,7 +180,7 @@ a {
 .location__body {
   padding: 30px;
   border-radius: 0 0 30px 30px;
-  border: 1px solid rgba(89, 190, 41, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.123);
   border-top: none;
   text-align: center;
 }
@@ -199,11 +197,8 @@ a {
 }
 
 .stays {
-  padding: 40px 0;
+  padding: 50px 0;
   text-align: center;
-}
-.stays__slide {
-  width: 262px;
 }
 .stays__header {
   max-width: 735px;
@@ -219,19 +214,35 @@ a {
   font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
   color: rgba(0, 0, 0, 0.7);
 }
+.stays__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stays__slide {
+  width: 262px;
+}
 .stays__card {
   display: block;
   justify-content: center;
   align-items: center;
-  padding: 0 8px;
+  padding: 0 10px;
+  border-radius: 10px;
   background-color: #fff;
+  transition: all 0.3s;
+}
+.stays__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 35px rgba(13, 32, 4, 0.05);
 }
 .stays__image-link {
   display: block;
-  padding-bottom: 66%;
   position: relative;
   overflow: hidden;
-  border-radius: 10px;
+  padding-bottom: 66%;
+  border-radius: 10px 10px 0 0;
+  border: 1px solid rgba(89, 190, 41, 0.05);
+  border-bottom: none;
 }
 .stays__image-link img {
   position: absolute;
@@ -239,12 +250,11 @@ a {
   left: 0;
   width: 100%;
 }
-.stays__image-link:hover {
-  transform: scale(0.9);
-}
 .stays__body {
-  text-align: left;
-  padding-top: 10px;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 0 0 10px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.123);
 }
 .stays__name {
   padding: 10px 0 4px;
@@ -257,8 +267,8 @@ a {
   color: #0066ff;
 }
 .stays__review {
-  text-align: left;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 .stays__review-location {
@@ -272,12 +282,11 @@ a {
   padding: 4px 0 4px 25px;
 }
 .stays__info {
-  padding: 0 5px 10px;
+  padding: 5px 0 5px;
   font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
-  color: #000;
+  color: rgba(0, 0, 0, 0.7);
 }
 .stays__price {
-  padding-top: 4px;
   font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
   color: #000;
 }
@@ -287,11 +296,8 @@ a {
 }
 .stays__controls {
   display: flex;
-  padding-top: 50px;
-}
-
-.stays__slider {
-  display: inline-block;
+  justify-content: center;
+  padding-top: 45px;
 }
 
 .swiper-wrapper {
@@ -314,42 +320,115 @@ a {
   color: #000;
 }
 
-.stays__pagination.swiper-pagination-bullets {
-  width: auto;
-  line-height: 0;
-  padding: 0 50px;
+.blog {
+  padding: 50px 0;
+  text-align: center;
 }
-
-.stays__prev, .stays__next {
-  width: 14px;
-  height: 12px;
-  cursor: pointer;
+.blog__info {
+  max-width: 735px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+.blog__info-title {
+  font: 600 50px/1.3 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
   color: #000;
-  display: flex;
+  margin-bottom: 20px;
 }
-
-.stays__prev:hover, .stays__next:hover {
-  color: #0066ff;
+.blog__info-descr {
+  font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
 }
-
-.swiper-pagination-bullet {
-  width: 75px;
-  height: 5px;
-  background-color: rgba(0, 26, 255, 0.1);
+.blog__wrap {
+  letter-spacing: -0.36em;
+  margin: 0 -15px;
+}
+.blog__col {
+  width: 50%;
+  padding: 0 15px;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: top;
+  text-align: left;
+}
+.blog__first-image {
+  display: block;
+  padding-bottom: 72%;
+  position: relative;
+  overflow: hidden;
   border-radius: 10px;
-  margin: 0 1.5px;
 }
-
-.swiper-pagination-bullet:hover {
-  background-color: #0066ff;
+.blog__first-image:hover {
+  transform: scale(1.05);
 }
-
-.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 1.5px;
+.blog__first-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-
-.swiper-pagination-bullet-active {
-  background-color: #0066ff;
+.blog__body {
+  padding: 30px 0;
+  max-width: 470px;
+}
+.blog__body-name {
+  margin-bottom: 10px;
+}
+.blog__body-name-link {
+  font: 500 25px/1.5 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: #000;
+}
+.blog__body-name-link:hover {
+  color: blue;
+}
+.blog__body-descr {
+  margin-bottom: 10px;
+  text-align: left;
+}
+.blog__news-card1, .blog__news-card2, .blog__news-card3 {
+  letter-spacing: -0.36em;
+}
+.blog__news-card {
+  width: 50%;
+  display: inline-block;
+  letter-spacing: normal;
+  vertical-align: middle;
+  margin-bottom: 30px;
+  position: relative;
+}
+.blog__news-card-link {
+  display: block;
+  padding-bottom: 76%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+}
+.blog__news-card-link:hover {
+  transform: scale(1.05);
+}
+.blog__news-card-link img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.blog__news-card-body-info {
+  vertical-align: middle;
+  padding: 0 30px;
+}
+.blog__news-card-body-link {
+  margin-bottom: 10px;
+  font: 500 25px/1.5 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: #000;
+}
+.blog__news-card-body-link:hover {
+  color: blue;
+}
+.blog__news-card-body-descr {
+  margin: 10px 0 5px;
+  font: 400 18px/1.6 "Baloo Chettan 2", Arial, Helvetica, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 /*# sourceMappingURL=style.css.map */
