@@ -59,8 +59,14 @@
         &-title {
             margin-bottom: 30px;
             max-width: 765px;
-            font: $h1-font;
-            color: $white;
+            font-family: $second-ff;
+            font-size: 63px;
+            color: transparent;
+            -webkit-text-stroke: 1px $white;
+            background: url(/images/back.png);
+            -webkit-background-clip: text;
+            background-position: 0 0;
+            animation: back 20s linear infinite;
         }
 
         &-descr {
@@ -68,5 +74,11 @@
             margin-bottom: 30px;
             color: $white;
         }
+    }
+}
+
+@keyframes back {
+    100% {
+        background-position: 2000px 0;
     }
 }
