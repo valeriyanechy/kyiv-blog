@@ -43,17 +43,19 @@
         display: block;
         position: relative;
         overflow: hidden;
-        padding-bottom: 91%;
+        padding-bottom: 82%;
         border-radius: 20px 20px 0 0;
         border: 1px solid rgba(89, 190, 41, 0.05);
-        border-bottom: none;
+        border-bottom: none; 
 
         img {
             position: absolute;
+            object-fit: cover;
             top: 0;
             left: 0;
             width: 100%;
-            object-fit: cover;
+            height: 100%;
+            max-height: 300px;
             transition: $trs;
         }
     }
