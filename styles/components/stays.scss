@@ -141,3 +141,48 @@
     font: $main-font;
     color: $black;
 }
+
+@media(max-width: 768px) {
+    .stays__slide {
+        width: 19%;
+    }
+
+    .stays__card {
+        padding: 0 5px;
+        width: 97%;
+    }
+
+    .stays__link {
+        font-size: 17px;
+    }
+
+    .stays__name {
+        padding-bottom: 10px;
+    }
+
+    .stays__review-location {
+        padding: 0 5px;
+    }
+
+    .review__location-link, .review__rating-link {
+        width: 15px;
+    }
+
+    .review__location {
+        font-size: 13px;
+        padding-left: 3px;
+    }
+
+    .stays__review-rating {
+        padding: 0 5px;
+    }
+
+    .review__rating {
+        padding-left: 3px;
+        font-size: 13px;
+    }
+
+    .stays__info {
+        font-size: 15px;
+    }
+}

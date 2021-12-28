@@ -82,3 +82,20 @@
         }
     }
 }
+
+@media(max-width: 1024px) {
+    .location__body {
+        max-height: 278px;
+    }
+}
+
+@media(max-width: 768px) {
+    .location__col {
+        width: 100%;
+        padding: 10px 90px;
+    }
+
+    .location__image-link {
+        padding-bottom: 40%;
+    }
+}

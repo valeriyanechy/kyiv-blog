@@ -132,3 +132,15 @@
         color: $text-color;
     }
 }
+
+@media(max-width: 768px) {
+    .blog__col {
+        width: 100%;
+        padding: 0 55px;
+    }
+
+    .blog__body {
+        max-width: 720px;
+        text-align: center;
+    }
+}

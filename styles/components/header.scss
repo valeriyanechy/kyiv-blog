@@ -82,3 +82,15 @@
         background-position: 2000px 0;
     }
 }
+
+@media(max-width: 1024px) {
+    .header__info {
+        padding-left: 50px;
+    }
+}
+
+@media(max-width: 768px) {
+    .header__info-title {
+        font-size: 55px;
+    }
+}

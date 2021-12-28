@@ -117,3 +117,15 @@
         }
     }
 }
+
+@media(max-width: 768px) {
+    .footer__wrap {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__col:last-child {
+        text-align: center;
+        padding: 20px 210px;
+    }
+}
